@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("test/")
 public class TestController {
 
-    @Value("server.id")
+    @Value("${server.id}")
     private String id;
 
     @GetMapping
